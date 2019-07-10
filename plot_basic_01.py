@@ -1,6 +1,8 @@
 #! /usr/bin/env python3
 
 from matplotlib import pyplot as plt
+# pyplot is a collection of command style functions which make matplotlib work
+# like MATLAB. If you want more flexibility, use the OO interface.
 
 devx = [25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35]
 
@@ -22,6 +24,9 @@ plt.title('Median Salary (USD) by Age')
 # plt.legend(['All Devs', 'Python'])
 # Or:
 plt.legend()  # No args when you have label attrs in the above plot()s
+
+# When using legend attrs in each plot() you just call legend() with no args
+# and the legend appears the same as the legend(['a', 'b']) technique.
 
 plt.show()
 
