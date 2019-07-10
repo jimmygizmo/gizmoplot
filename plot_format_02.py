@@ -6,6 +6,8 @@ from matplotlib import pyplot as plt
 
 print(plt.style.available)
 plt.style.use('bmh')
+# When trying new styles, first try them without custom styling attributes
+# like color, linewidth, grid as the style might cover those anyway.
 
 agex = [25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35]
 devy = [38496, 42000, 46752, 49320, 53200, 56000,
@@ -33,6 +35,8 @@ plt.legend()  # Causes legend in upper-left by using label attributes.
 
 # Fixed a padding (left/outer margin) problem when a style was applied:
 plt.tight_layout()
+
+plt.savefig('plot.png')
 
 plt.show()
 
